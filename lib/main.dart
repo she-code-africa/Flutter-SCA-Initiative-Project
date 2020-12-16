@@ -28,64 +28,73 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        width: double.infinity,
-        decoration: BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/images/main_bg.jpg'),
-            fit: BoxFit.cover,
-            colorFilter: ColorFilter.mode(
-              Colors.black.withOpacity(0.7),
-              BlendMode.darken,
+      body: Column(
+        children: <Widget>[
+          Expanded(
+            flex: 2,
+            child: Center(
+              child: Text(
+                'Level Up!',
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black,
+                  fontSize: 30,
+                  fontFamily: 'worksans',
+                ),
+              ),
             ),
           ),
-        ),
-        child: Column(
-          children: <Widget>[
-            Expanded(
-              flex: 1,
-              child: Container(),
-            ),
-            Expanded(
-              flex: 2,
-              child: Image.asset(
-                'assets/images/sca_logo.png',
-                height: 200,
-              ),
-            ),
-            Expanded(
-              flex: 2,
-              child: Center(
-                child: Text(
-                  'SCA Initiative -\n Flutter track',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w500,
-                    color: Colors.white,
-                    fontSize: 30,
-                    fontFamily: 'worksans',
+          Expanded(
+            flex: 2,
+            child: Stack(
+              children: [
+                Align(
+                  alignment: Alignment.center,
+                  child: Image.asset(
+                    'assets/images/ribbon.png',
+                    height: 200,
                   ),
+                ),
+                Align(
+                  alignment: Alignment.center,
+                  child: Image.asset(
+                    'assets/images/badge.png',
+                    height: 200,
+                  ),
+                ),
+              ],
+            ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Center(
+              child: Text(
+                'Level 1',
+                style: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  color: Colors.black,
+                  fontSize: 30,
+                  fontFamily: 'worksans',
                 ),
               ),
             ),
-            Expanded(
-              flex: 2,
-              child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20.0),
-                child: Text(
-                  'Hey queen, congratulations on making it inot the levelled membership programme being set up by the SCA community. '
-                  '\n\nBut you know you are on the wrong branch right? Hed over to your respective level branch to start your project.'
-                  '\n\nWidhing you best of luck!!!.',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 14,
-                    fontFamily: 'opensans',
-                  ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
+              child: Text(
+                'Congratulations!!!\n\non making it into the programme \n Kindly clear up this screen to start your task.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 14,
+                  fontFamily: 'opensans',
                 ),
               ),
             ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
