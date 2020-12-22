@@ -73,7 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 padding: const EdgeInsets.symmetric(horizontal: 20.0),
                 child: Text(
                   'Hey queen, congratulations on making it inot the levelled membership programme being set up by the SCA community. '
-                  '\n\nBut you know you are on the wrong branch right? Hed over to your respective level branch to start your project.'
+                  '\n\nBut you know you are on the wrong branch right? Head over to your respective level branch to start your project.'
                   '\n\nWidhing you best of luck!!!.',
                   textAlign: TextAlign.center,
                   style: TextStyle(
