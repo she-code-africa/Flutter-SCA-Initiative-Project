@@ -69,7 +69,7 @@ class _MyHomePageState extends State<MyHomePage> {
             flex: 2,
             child: Center(
               child: Text(
-                'Level 1',
+                'Level 3',
                 style: TextStyle(
                   fontWeight: FontWeight.w500,
                   color: Colors.black,
@@ -84,7 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20.0),
               child: Text(
-                'Congratulations!!!\n\non making it into the programme \n Kindly clear up this screen to start your task.',
+                'Congratulations!!!\n\n On making it this far, just keep the fire burning\nKindly clear up this screen to start your task',
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.grey,
